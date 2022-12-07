@@ -27,16 +27,14 @@
         </div>
     </div>
     <div class="layui-container">
+
         <div class="section-title" style="font-size: 20px;font-weight:500;">
         </div>
         <div class="ew-nav-group">
         </div>
 
         <div class="layui-btn-container">
-            <a type="button" class="layui-btn" href="/start/ppsort">PPSport</a>
-            <a type="button" class="layui-btn" href="/start/hzjlxc">比赛预告hzjlxc</a>
-            <a type="button" class="layui-btn" href="/start/boye360">比赛预告360boye</a>
-            <a type="button" class="layui-btn" href="/start/163">新闻163</a>
+
         </div>
 
     </div>
@@ -45,7 +43,54 @@
         <div class="layui-row layui-col-space25" style="margin-top: 10px;">
             <div class="layui-col-md6  layui-col-xs12">
                 <p style="font-size: 13.8px;font-weight: 500;margin-top: 10px;">{{exeRet}} </p>
+                <table border="1xp">
+                <tr>
+                </tr>
+                <tr>
+                    <td>直播8-新闻</td>
+                    <td>{{status["zhibo8news"]}}</td>
+                    <td><a type="button" class="layui-btn" href="/start/zhibo8">开始</a></td>
+                    <td><a type="button" class="layui-btn" href="/stop/zhibo8">停止</a></td>
+                </tr>
+                <tr>
+                    <td>直播8-球队资料|球员资料|球队荣誉|球员转会</td>
+                    <td>{{status["zhibo8team"]}}</td>
+                    <td><a type="button" class="layui-btn" href="/start/zhibo8team">开始</a></td>
+                    <td><a type="button" class="layui-btn" href="/stop/zhibo8team">停止</a></td>
+                </tr>
+                <tr>
+                    <td>直播8-赛事预报</td>
+                    <td>{{status["zhibo8saishiyubao"]}}</td>
+                    <td><a type="button" class="layui-btn" href="/start/zhibo8saishiyubao">开始</a></td>
+                    <td><a type="button" class="layui-btn" href="/stop/zhibo8saishiyubao">停止</a></td>
+                </tr>
+                <tr>
+                    <td>ppsport-新闻采集</td>
+                    <td>{{status["ppsport"]}}</td>
+                    <td><a type="button" class="layui-btn" href="/start/ppsport">开始</a></td>
+                    <td><a type="button" class="layui-btn" href="/stop/ppsport">停止</a></td>
+                </tr>
+                <tr>
+                    <td>hzjlxc-比赛预告</td>
+                    <td>{{status["hzjlxc"]}}</td>
+                    <td><a type="button" class="layui-btn" href="/start/hzjlxc">开始</a></td>
+                    <td><a type="button" class="layui-btn" href="/stop/hzjlxc">停止</a></td>
+                </tr>
+                <tr>
+                    <td>360boye-比赛预告</td>
+                    <td>{{status["boye360"]}}</td>
+                    <td><a type="button" class="layui-btn" href="/start/boye360">开始</a></td>
+                    <td><a type="button" class="layui-btn" href="/stop/boye360">停止</a></td>
+                </tr>
+                <tr>
+                    <td>163-新闻</td>
+                    <td>{{status["news163"]}}</td>
+                    <td><a type="button" class="layui-btn" href="/start/news163">开始</a></td>
+                    <td><a type="button" class="layui-btn" href="/stop/news163">停止</a></td>
+                </tr>
+            </table>
             </div>
+
             <div class="layui-col-md6 layui-col-xs12">
 
             </div>
